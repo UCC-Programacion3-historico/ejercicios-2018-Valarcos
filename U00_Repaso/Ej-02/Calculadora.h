@@ -2,7 +2,7 @@
 #define REPASO_CALCULADORA_H
 
 template<class T>
-class Calculadora {             
+class Calculadora {
 public:
     T sumar(T a, T b);
 
@@ -30,6 +30,9 @@ T Calculadora<T>::multiplicar(T a, T b) {
 
 template<class T>
 T Calculadora<T>::dividir(T a, T b) {
+    if(b == 0)
+        throw 404;
+
     return a / b;
 }
 

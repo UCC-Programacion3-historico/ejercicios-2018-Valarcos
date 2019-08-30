@@ -5,9 +5,13 @@
 using namespace std;
 
 int main() {
-    Calculadora<int, float> miCalc;
+    Calculadora<int> miCalc;
+    vector<int> pp;
 
-    cout << miCalc.divi(10, 3);
+    pp.push_back(3);
+
+
+    cout << miCalc.dividir(10, 3)<< endl;
     cout << "Ejercicio 00/02\n" << endl;
     return 0;
 }
