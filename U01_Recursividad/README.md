@@ -1,37 +1,37 @@
-
 ## Ejercicio N°1.
-Repaso Programación Orientada a Objetos. Implemente una clase abstracta Geometría y 3 clases hijos; Cuadrado, Triangulo y Circulo. Las 3 deben heredar de la clase Geometría. Cree la clase Color y por contención utilícela en las otras tres.
+Implemente una función para potencias enteras con recursividad.
+Definición recursiva para elevar un número a una potencia: 
+Un número elevado a la potencia cero produce la unidad; la 
+potencia de un número se obtiene multiplicándolo por sí mismo 
+elevando a la potencia menos uno. 
+Por ejemplo: 
 
-|             | Geometría (abstracta)           | Cuadrado    | Triangulo | Circulo | Color                         |
-|-------------|---------------------------------|-------------|-----------|---------|-------------------------------|
-| Propiedades |alto<br>ancho<br>color<br>       |             |angulo     | Radio   | Rojo</br>Verde</br>Azul       |
-| Métodos     |getSuperficie<br>getPerimetro    | getDiagonal |getAngulo  | getRadio| getColor</br> tenirColor      |
+3<sup>2</sup>=3*(3<sup>1</sup>)=3*[3*(3<sup>0</sup>)]=3*(3*1)=9
 
 ##  Ejercicio N°2. 
-Repaso de uso de Templates en C++.
-Cree una clase calculadora
-mediante el uso de Templates, dicha clase debe tener los métodos
-sumar, restar, dividir, multiplicar que realizaran operaciones
-en dos propiedades A y B.
+Implemente una función recursiva que, teniendo un array
+ingresado por teclado, me devuelva la suma de todos sus elementos
 
 ##    Ejercicio N°3. 
-Repaso de uso de excepciones en C++. En el método dividir de la clase
-del ejercicio 2, verifique que el divisor no es 0. Si el divisor es 0,
-arroje una excepción.
+Algoritmo de Ackerman -> Número de Combinaciones
+Recursivamente, podemos definir el número de combinaciones
+de m objetos tomados de n, denotado:
+![Notación Ackermann](https://wikimedia.org/api/rest_v1/media/math/render/svg/6e1707b67f7985e91e02de8fb65ed9d6049558a5)
 
 ##    Ejercicio N°4. 
-Calcular el tiempo equivalente en horas minutos y segundos a un número
-de segundos leído. El resultado debe imprimirse en un formato como el
-siguiente:
-7322 segundos equivalen a: 2 horas, 2 minutos y 2 segundos.
+Algoritmo de Euclides: mostrar que el máximo común divisor
+(mcd) de a y b, (a > b > 0), es igual a a si b es cero, en
+otro caso es igual al mcd de b y el remanente de a dividido
+por b, si b > 0.
 
 ##    Ejercicio N°5. 
-En aplicaciones criticas, se usa la redundancia de memoria y 
-procesadores para detectar errores. Implemente la clase Entero 
-con redundancia de valores Int y sobrecargue los operadores +,-,*,/,= 
-para que se comporte como un numero Int común pero arroje excepciones 
-si hay error en la redundancia.
+Escribir segmentos de programa que lleven a cabo de forma
+recursiva, cada una de las siguientes tareas:
 
-##    Ejercicio N°6. 
-Implemente un programa que mida el tiempo que demora un bucle FOR en 
-llenar un array de 1024 elementos int con valores del 0 al 1023.
+1. Calcule la parte entera del cociente, cuando 
+el entero a se divide por el entero b.
+2. Calcule el resto entero, cuando el entero a es
+ dividido por el entero b.
+3. Utilice los módulos 1. y 2. para escribir una función recursiva que dado un entero no negativo lo imprima como una serie de dígitos separados por espacios.
+ 
+ Ej: dado el entero 1024, debe escribir     "1 0 2 4 "
